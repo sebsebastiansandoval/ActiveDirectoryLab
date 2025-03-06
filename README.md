@@ -130,15 +130,47 @@ Select Standard Configuration, the next.
 <img src="https://i.imgur.com/Pb98TX8.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-For this step, it is VERY curcial we do this part correctly. Our root password is "root" but it is NEVER recommended to use such a simple password in a real work setting.
+For this step, it is VERY curcial we do this part correctly. Our root password is "root" but it is NEVER recommended to use such a simple password in a real work setting. After this step finsih the installation.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/U3qCOeh.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-hi
+Open IIS as an admin.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/v6i4T1y.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+In our Web Server, we will register PHP from within IIS (PHP Manager -> C:\Windows PHP\php-cgi.exe). After going to PHP Manager, click "Register new PHP Version". Click the three dots then go to where we saved the PHP files in our C:\ drive. Hit open, then proceed on through that window.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/xg8cD5W.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Reload IIS (Open IIS, Stop and Start the server). To stop the server, you can either, on IIS, right click where it says osticket-vm then Stop. Or you can click that then a "Stop" button will appear on the right side of the window. 
+<br />
+
+<p>
+<img src="https://i.imgur.com/xSchL72.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Then do either process again but click Start this time.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/UYSVZdw.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Install osTicket v1.15.8
+From the “osTicket-Installation-Files” folder, unzip “osTicket-v1.15.8.zip” and copy the “upload” folder into “c:\inetpub\wwwroot”.
 </p>
 <br />
 
