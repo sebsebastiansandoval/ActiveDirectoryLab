@@ -73,7 +73,7 @@ Now let's enable IIS and CGI. To start, open Control Panel in Windows. Select un
 <br />
 
 <p>
-<img src="https://i.imgur.com/UZrDxPa.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/jqy1DDo.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 For us to run osTicket, we will need to install PHP, which is a backend web server language. 
@@ -86,6 +86,59 @@ First go back to extracted osTicet file and double click "PHPManagerForllS_V1.5.
 </p>
 <p>
 Create the directory C:\Windows PHP
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/c4wAfKP.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+From the same osTicket foler we unzipped, we want to unzip PHP 7.3.8 php-7.3.8-nts-Win32-VC15-x86.zip) into the “C:\Windows PHP” folder.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/PjIV7o8.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<p>
+<img src="https://i.imgur.com/l2Bacz3.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+From the same osTicket folder, double click and install Microsoft Visual C++ (VC_redist.x86.exe)
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/U2shtEp.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Next we must download MySQL. Which will act as a database which includes all the user account or ticketing information. 
+Select and double click the "mysql=5.5.62-win32" file, located in the same osTicket folder. Accept all terms and agreements then hit install.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/hsLS9zs.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Select Standard Configuration, the next.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/Pb98TX8.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+For this step, it is VERY curcial we do this part correctly. Our root password is "root" but it is NEVER recommended to use such a simple password in a real work setting.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+hi
 </p>
 <br />
 
