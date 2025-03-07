@@ -175,6 +175,23 @@ From the “osTicket-Installation-Files” folder, unzip “osTicket-v1.15.8.zip
 <br />
 
 <p>
+<img src="https://i.imgur.com/uiOhBRz.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Reload IIS (Open IIS, Stop then Start the server)
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Go to sites -> Default -> osTicket
+On the right, click “Browse *:80”. That should take you to osTicket through the web.
+</p>
+<br />
+
+<p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
