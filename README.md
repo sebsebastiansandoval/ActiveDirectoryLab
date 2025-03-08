@@ -195,12 +195,16 @@ On the right, click “Browse *:80”. That should take you to osTicket through 
 <img src="https://i.imgur.com/oIyFGlN.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-You'll in the middle how certain features seem to be turned off. We need to turn on "php_imap.dll", "php_intl.dll", and "php_opcache.dll".
+You'll see in the middle how certain features seem to be turned off. We need to turn on "php_imap.dll", "php_intl.dll", and "php_opcache.dll".
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/AsC4bSW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<p>
+<img src="https://i.imgur.com/PPdOyZd.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 To do so: Go back to IIS, sites -> Default Web Sites -> osTicket. Double click PHP Manager. Click "enable or diable an extention". Then enable the 3 previously mentioned features.
@@ -209,25 +213,83 @@ Refresh the osTicket browser itself afterwards. Take note of the changes.
 <br />
 
 <p>
-<img src="https://i.imgur.com/AsC4bSW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/7FRXsWJ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Rename: ost-config.php
+From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
+To: C:\inetpub\wwwroot\osTicket\include\ost-config.php
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/Fv6gA0Q.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Assign Permissions: From the "ost-config.php" we just configured right click, then click Properties -> Security -> Advanced. But first we want to actualy "Disable Inheritance", to strip all current permissions away. Click "add" then set principles. Under object name, s type "everyone" (for security, never recommended in real life). Finally set the Full Control permission then hit "Apply" and Ok.
+</p>
+The reason we set the object name to everyone is because we don't know the actual group name that represents osTicket.
+<br />
+
+<p>
+<img src="https://i.imgur.com/PbQL0I7.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Continue setting up osTicket in the browser (Click continue button on the bottom).
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/AsC4bSW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/nMHljUI.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+For System Settings, You can enter any Helpdesk Name and email, just make sure your email is a different one for your Admin user. For Admin User, you can enter your name, and we will be using "adminuser" for our username, and "Password1" for the admin password.
+<br />
+
+<p>
+<img src="https://i.imgur.com/wP6XdTK.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<br />Z
+<p>
+<img src="https://i.imgur.com/8HIK5nU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/MwilMD0.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+Now for the Database, we already created the database application on the backend, but now we must login into that database and create another one specific to osTicket. Then provide it here in osTicket once we finish.
+</p>
+From the “osTicket-Installation-Files” folder, install HeidiSQL.
+Open Heidi SQL
+Create a new session, root/root
+Connect to the session
+Create a database called “osTicket”
+</p>
+Fun Fact: Hedi SQL is a application that allows us to make a connection to our database and configure it as well.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/yxgyClO.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Going back to osTicket in the browser;
+MySQL Database: osTicket
+MySQL Username: root
+MySQL Password: root
+Click “Install Now!”
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/nMHljUI.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+  
+<h2>Congrats!!</h2>
+Hopefully it is complete with no errors! :) 
+</p>
+You can access osTicket as an Admin through here: http://localhost/osTicket/scp/login.php
+</p>
+End Users can submit tickets on osTicket through here: http://localhost/osTicket/ 
+</p>
+
+<br />
