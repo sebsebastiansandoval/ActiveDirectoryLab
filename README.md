@@ -284,7 +284,7 @@ Click “Install Now!”
 </p>
 <p>
   
-<h2>Congrats!!</h2>
+<h2>Congratulations!! ^_^ </h2>
 Hopefully it is complete with no errors! :) 
 </p>
 You can access osTicket as an Admin through here: http://localhost/osTicket/scp/login.php
