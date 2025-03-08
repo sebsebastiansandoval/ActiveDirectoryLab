@@ -183,11 +183,36 @@ Reload IIS (Open IIS, Stop then Start the server)
 <br />
 
 <p>
+<img src="https://i.imgur.com/bagRdCF.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Go to sites -> Default Web Site -> osTicket
+On the right, click “Browse *:80”. That should take you to osTicket through the web/web server.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/oIyFGlN.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+You'll in the middle how certain features seem to be turned off. We need to turn on "php_imap.dll", "php_intl.dll", and "php_opcache.dll".
+</p>
+<br />
+
+<p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Go to sites -> Default -> osTicket
-On the right, click “Browse *:80”. That should take you to osTicket through the web.
+To do so: Go back to IIS, sites -> Default Web Sites -> osTicket. Double click PHP Manager. Click "enable or diable an extention". Then enable the 3 previously mentioned features.
+Refresh the osTicket browser itself afterwards. Take note of the changes.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/AsC4bSW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 </p>
 <br />
 
@@ -198,3 +223,11 @@ On the right, click “Browse *:80”. That should take you to osTicket through 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 </p>
 <br />
+
+<p>
+<img src="https://i.imgur.com/AsC4bSW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</p>
+<br />Z
