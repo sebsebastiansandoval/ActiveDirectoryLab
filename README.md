@@ -114,7 +114,7 @@ With Server 2019 finally installed, you will be prompted to set an Adminstrative
 <p align="center">
 <img src="https://imgur.com/OchiQXu.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
-With Server 2019 finally installed, you will be prompted to set an Adminstrative Password, for this password and every other password from this lab onward we will be using the same password "Password1" so we can remember it easily. Just never do that in a real world environment! ;)
+To login to the VM, you'll notice it will say to do the combined keystroke "Cntrl+Alt+Dlt" to login but when you try to do that it will not work. Depending whether you are using Mac or Windows you'll go to Input then Keyboard, then hit "Insert Cntrl+Alt+Dlt" it will then prompt you to enter our simple password from earlier. "Password1"
 <br />
 <br />
  
