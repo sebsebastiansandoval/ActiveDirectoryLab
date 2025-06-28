@@ -112,7 +112,7 @@ With Server 2019 finally installed, you will be prompted to set an Adminstrative
 <br />
 
 <p align="center">
-<img src="https://imgur.com/jevncQO.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/OchiQXu.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 With Server 2019 finally installed, you will be prompted to set an Adminstrative Password, for this password and every other password from this lab onward we will be using the same password "Password1" so we can remember it easily. Just never do that in a real world environment! ;)
 <br />
