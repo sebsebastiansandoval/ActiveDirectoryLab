@@ -128,7 +128,7 @@ Once you're logged into the VM you'll notice how the user experience around is v
 <p align="center">
 <img src="https://imgur.com/3d70XxY.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
-To finilize guest additions, go to your file explorer app. You will now see a new Drive appear called "CD Drive (D:) VirtualBox Guest Additions", then near the bottom of the listed contents inside double click the executable "VBoxWindowsAdditions-amd64".
+To finilize guest additions, go to your file explorer app. You will now see a new Drive appear called "CD Drive (D:) VirtualBox Guest Additions", double click that then near the bottom of the listed contents inside double click the executable "VBoxWindowsAdditions-amd64".
 <br />
 <br />
  
