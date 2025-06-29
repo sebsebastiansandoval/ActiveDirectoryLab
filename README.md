@@ -117,6 +117,20 @@ With Server 2019 finally installed, you will be prompted to set an Adminstrative
 To login to the VM, you'll notice it will say to do the combined keystroke "Cntrl+Alt+Dlt" to login but when you try to do that it will not work. Depending whether you are using Mac or Windows you'll go to Input then Keyboard, then hit "Insert Cntrl+Alt+Dlt" it will then prompt you to enter our simple password from earlier. "Password1"
 <br />
 <br />
+
+<p align="center">
+<img src="https://imgur.com/hA3RtQP.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+Once you're logged into the VM you'll notice how the user experience around is very choppy, for example simply moving around your mouse or minimizing/maximizing the window size for the VM. To fix this click Devices at the top of the window then enable "Insert Guest Additions".
+<br />
+<br />
+
+<p align="center">
+<img src="https://imgur.com/3d70XxY.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+To finilize guest additions, go to your file explorer app. You will now see a new Drive appear called "CD Drive (D:) VirtualBox Guest Additions", then near the bottom of the listed contents inside double click the executable "VBoxWindowsAdditions-amd64".
+<br />
+<br />
  
 <!--
  ```diff
