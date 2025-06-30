@@ -187,6 +187,76 @@ Next, we will rename this PC as it currently has a randomly generated name. Righ
 Looking back at our diagram we have both our NICs setup, we configured IP addressing for our Internal NIC and it is connected to the internal network where nothing is actually there yet. We will now install Active Directory Domain Services or shown on the diagram "AD DS" and create a domain!
 <br />
 <br />
+  
+<p align="center">
+<img src="https://imgur.com/pl7tsBL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+Now looking at Server Manager, click "Add roles and features". Hit "Next >" until you get to Server Selection, this is where you select the server on which Active Directory will be working on. In this lab we only use 1 so we'll choose that one.
+<br />
+<br />
+  
+<p align="center">
+<img src="https://imgur.com/9kYsAZM.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+With Server Roles we'll be only selecting "Active Directory Domain Services". Then Next > and "Install". Depending on how much resources you dedicated to the VM in the beginning and your personal internet speed, this process may take a minute to complete.
+<br />
+<br />
+  
+<p align="center">
+<img src="https://imgur.com/C05So56.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+Now with the role installed, we can close that window. You'll notice this "yellow flag" at the top right corner. Telling us that we have to do our "Post-deployment Configuration" that we installed the software for active directory services but we haven't actually created the domain yet. So click this to promote this server to Domain.
+<br />
+<br />
+  
+<p align="center">
+<img src="https://imgur.com/dbbusNF.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+"Add a new forest". We can name the domain whatever we want but for this lab we will name it "mydomain.com". Next > then under Domain Controller Options, type the Directory Services Restore Mode (DSRM) password. Password1. Next > then Install. It will automatically restart the server for us.
+<br />
+<br />
+ 
+<p align="center">
+<img src="https://imgur.com/h2pItjw.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+You'll now notice your current user begins w/ MYDOMAIN\. Login with "Password1".
+<br />
+<br />
+ 
+<p align="center">
+<img src="https://imgur.com/bJAFOlV.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+We are actually going to create our own dedicated Admin account, rather than use the built-in adminstrator account. To do so, go to Start on the bottom left -> Windows Adminstative Tools -> Active Directory Users and Computers.
+<br />
+<br />
+ 
+<p align="center">
+<img src="https://imgur.com/jWycDL4.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+We have our new and freshly created domain now "mydomain.com". To store our dedicated admin account we will store it in a newly created "Organizational Unit" or OU. Which is essentially acts as a folder in active directory. We will name it "_ADMINS".
+<br />
+<br />
+ 
+<p align="center">
+<img src="https://imgur.com/sXuOsGn.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+Right click _ADMINS -> New -> User. Name it your name. For our user we will use the most common naming convention used in a work environment for ex. "a-*insert first initial + full last name". So for us it would be "a-ssandoval". Then finish.
+<br />
+<br />
+ 
+<p align="center">
+<img src="https://imgur.com/EcvUWNa.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+With our newly created Admin account you'll see it's still a regular "User" account. To assign it as a admin role, right-click your user -> Properties -> Membor of -> Add -> under "Enter the object names to select:" enter "domain admins" -> Check Names. We'll see it resolves to Domain Admins, then hit OK. We now have our very own admin account!
+<br />
+<br />
+ 
+<p align="center">
+<img src="https://imgur.com/6kfYdkc.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+To now use this account, sign out of the VM then log back in clicking "Other User" at the bottom left. Enter the admin user we created earlier, for myself it would be "a-ssandoval" and our simple password "Password1". Allowing it to pull our name out from Active Directory.
+<br />
+<br />
  
 <!--
  ```diff
