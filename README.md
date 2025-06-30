@@ -170,7 +170,7 @@ To assign an IP to our Internal NIC now right click our Internal NIC then hit "P
 <p align="center">
 <img src="https://imgur.com/SixlNa3.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
-For DNS, when installing Active Directory it automatically installs DNS so this server will actually be using itself as the DNS server. To do that we either re-enter it's own IP address "172.16.0.1", or we can the universal loopback address 127.0.0.1.
+For DNS, when installing Active Directory it automatically installs DNS so this server will actually be using itself as the DNS server. To do that we either re-enter it's own IP address "172.16.0.1", or we can the universal loopback address 127.0.0.1. Then hit OK then OK again.
 <br />
 <br />
  
@@ -182,9 +182,9 @@ Next, we will rename this PC as it currently has a randomly generated name. Righ
 <br />
  
 <p align="center">
-<img src="https://imgur.com/icgbw1G.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/R374UDO.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
-Next, we will rename this PC as it currently has a randomly generated name. Right click the Windows icon at the bottom left then "System". Then "Rename this PC" to something arbritrary like "DC". Next, then "Restart Now" and allow it to reboot. Then log back in afterwards.
+Looking back at our diagram we have both our NICs setup, we configured IP addressing for our Internal NIC and it is connected to the internal network where nothing is actually there yet. We will now install Active Directory Domain Services or shown on the diagram "AD DS" and create a domain!
 <br />
 <br />
  
