@@ -128,7 +128,63 @@ Once you're logged into the VM you'll notice how the user experience around is v
 <p align="center">
 <img src="https://imgur.com/3d70XxY.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
-To finilize guest additions, go to your file explorer app. You will now see a new Drive appear called "CD Drive (D:) VirtualBox Guest Additions", double click that then near the bottom of the listed contents inside double click the executable "VBoxWindowsAdditions-amd64".
+To finilize guest additions, go to your file explorer app. You will now see a new Drive appear called "CD Drive (D:) VirtualBox Guest Additions", double click that then near the bottom of the listed contents inside double click the executable "VBoxWindowsAdditions-amd64". Agree to each of the prompts until it asks you to reboot now, click reboot later then "Finish". Now, shutdown the VM.
+<br />
+<br />
+ 
+<p align="center">
+<img src="https://imgur.com/XGCgFPv.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+Double click our VM to start it up again. Once open, login by clicking input at the top then "Insert Cntrl+Alt+Dlt". Now you notice how much smoother the overall user experience is. 
+<br />
+<br />
+ 
+<p align="center">
+<img src="https://imgur.com/zUAAwYx.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+Looking back at the diagram we have 2 NICs for our DC, our internet NIC does not require us to setup up an IP as it will use DHCP to get addressing from your home router. But for our Internal NIC, we must set it up manually.
+<br />
+<br />
+ 
+<p align="center">
+<img src="https://imgur.com/m3xQIRc.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+Open up "Control Panel" then go to "Network and Internet" then "Network Connections". We want to identify which NIC is our Internal versus our Internet NIC and rename them accordingly. 
+<br />
+<br />
+ 
+<p align="center">
+<img src="https://imgur.com/NCIRmaw.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+Right click the left one the hit "Details". We'll see this contains a home-like IP "10.0.2.15" so we will rename this "_INTERNET_". You'll notice the other NIC contains the address 169.254.196.79, meaning at one point it tried utilizing DHCP to assign an address but was unable to so it assigned itself this specific IP. So if you see a NIC with this specifc address that's how you'll know it's our Internal one. Rename this one "X_Internal_X".
+<br />
+<br />
+  
+<p align="center">
+<img src="https://imgur.com/hbwQp1c.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+To assign an IP to our Internal NIC now right click our Internal NIC then hit "Properties". Double click "Internet Protocol Version 4 (TCP/Ipv4)", then click "Use the following IP address:" and insert the IP and Subnet Mask all according to the Diagram. DISCLAIMER: We will not be assigning a default gateway because the DC itself will server as the default gateway so this particular NIC will not use one.
+<br />
+<br />
+  
+<p align="center">
+<img src="https://imgur.com/SixlNa3.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+For DNS, when installing Active Directory it automatically installs DNS so this server will actually be using itself as the DNS server. To do that we either re-enter it's own IP address "172.16.0.1", or we can the universal loopback address 127.0.0.1.
+<br />
+<br />
+ 
+<p align="center">
+<img src="https://imgur.com/IwtV8Rd.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+Next, we will rename this PC as it currently has a randomly generated name. Right click the Windows icon at the bottom left then "System". Then "Rename this PC" to something arbritrary like "DC". Next, then "Restart Now" and allow it to reboot.
+<br />
+<br />
+ 
+<p align="center">
+<img src="https://imgur.com/icgbw1G.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+Next, we will rename this PC as it currently has a randomly generated name. Right click the Windows icon at the bottom left then "System". Then "Rename this PC" to something arbritrary like "DC". Next, then "Restart Now" and allow it to reboot. Then log back in afterwards.
 <br />
 <br />
  
