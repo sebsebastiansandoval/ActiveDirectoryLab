@@ -258,6 +258,20 @@ To now use this account, sign out of the VM then log back in clicking "Other Use
 <br />
 <br />
  
+<p align="center">
+<img src="https://imgur.com/AucdXW9.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+Next we will install RAS/NAT (Remote Access Server/Network Address Translator). Which will allow our Windows 10 client to be on this private virtual network but still able to access the internet through this Domain Controller.
+<br />
+<br />
+ 
+<p align="center">
+<img src="https://imgur.com/csG8MLR.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+Next we will install RAS/NAT (Remote Access Server/Network Address Translator). Which will allow our Windows 10 client to be on this private virtual network but still able to access the internet through this Domain Controller.
+<br />
+<br />
+ 
 <!--
  ```diff
 - text in red
