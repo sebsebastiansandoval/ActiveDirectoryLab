@@ -35,7 +35,7 @@ First, download Virtual Box for Windows along w/ the Extention Pack via this lin
 <br />
 
 <p align="center">
-<img src="https://imgur.com/laaaVAI.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/Aqm3HLi.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 Download Windows 10 64-bit, save somewhere you will remember (e.g. save to Desktop)
 <br />
