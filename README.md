@@ -63,21 +63,14 @@ Now our Domain Controller has been created but there is nothing on it yet, befor
 <br />
 
 <p align="center">
-<img src="https://imgur.com/wghH8Db.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/Eyd5zWf.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 Go to "System" then "Processor", here we will allocate 4 cores instead of 1 as it speeds up the process for everything. But if you don't know how many cores you have or have a weak laptop you can simply keep it at 1 core.
 <br />
 <br />
 
 <p align="center">
-<img src="https://imgur.com/wghH8Db.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-Go to "System" then "Processor", here we will allocate 4 cores instead of 1 as it speeds up the process for everything. But if you don't know how many cores you have or have a weak laptop you can simply keep it at 1 core.
-<br />
-<br />
-
-<p align="center">
-<img src="https://imgur.com/a78WTa3.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/ktJaJNe.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 Lastly, go to the "Network" tab we will leave Adapter 1 alone as that will be one of our 2 total NICs for our DC, acting as the external NIC that will be connected to our home internet that will gain us access to browse the internet. Then go to "Adapter 2" we will be setting this adapter as our Internal private NIC so set it as "Internal Network" then hit create.
 <br />
