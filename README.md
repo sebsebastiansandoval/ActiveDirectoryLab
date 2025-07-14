@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://imgur.com/qk72Wsu.jpeg" alt="osTicket logo"/>
+<img src="https://imgur.com/GaolqUH.png" alt="osTicket logo"/>
 </p>
 
 <h1>Active Directory Home Lab</h1>
