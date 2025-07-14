@@ -28,7 +28,7 @@ In this tutorial we are going to learn the step-by-step process of creating an A
 <h2>Program walk-through:</h2>
 
 <p align="center">
-<img src="https://i.imgur.com/OtkPEUL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/enejrBW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 First, download Virtual Box for Windows along w/ the Extention Pack via this link here www.virtualbox.org/wiki/Downloads, regardless of the Operating System you're using (e.g. Windows, Linux)
 <br />
