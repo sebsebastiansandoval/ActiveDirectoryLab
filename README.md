@@ -56,7 +56,7 @@ We will be allocating 2,048 MBs or 2Gbs of RAM MINIMUM to our VM.Then hit finish
 <br />
 
 <p align="center">
-<img src="https://imgur.com/cqjvA6a.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/HF8DUqJ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 Now our Domain Controller has been created but there is nothing on it yet, before we install Server 2019, we will go to Settings then Advanced. Here change "Shared Clipboard" and "Drag'n'drop" to Bidirectional. Turning that on for Shared Clipboard allows you to actively switch between your live VM and main desktop interchangably, with Drag'n'drop it allows you to drag files from for example your desktop onto the VM.
 <br />
