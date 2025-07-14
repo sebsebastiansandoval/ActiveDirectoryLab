@@ -49,7 +49,7 @@ Now to create our Virtual Machines, open Oracle Virtual Box and hit "New". We'll
 <br />
 
 <p align="center">
-<img src="https://imgur.com/gtZkApl.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/VOqs1pA.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 We will be allocating 2,048 MBs or 2Gbs of RAM MINIMUM to our VM.Then hit finish and create.
 <br />
