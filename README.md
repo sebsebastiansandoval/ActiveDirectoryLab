@@ -77,7 +77,7 @@ Lastly, go to the "Network" tab we will leave Adapter 1 alone as that will be on
 <br />
 
 <p align="center">
-<img src="https://imgur.com/ZgMUzBq.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/6OXITbM.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 We have now officially created our Virtual Machine but still has nothing on it yet. So to install Server 2019 we will turn on our VM by double clicking it. A window will pop up and we just want to select the Server 2019 file we saved to desktop earlier. Choose then hit Start to start the VM. Keep in mind that the installing portion of this will take a minute.
 <br />
@@ -91,35 +91,35 @@ With it finally installed hit Install Now then select either of the two Desktop 
 <br />
 
 <p align="center">
-<img src="https://imgur.com/ZfGBAKh.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/R8IWiMH.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 As it finalizes and installs Windows onto the Server this will also take awhile to complete. IMPORTANT DISCLAIMER: As it is downloading the server will restart several times, as it restart it will prompt you to "click any key to boot", IGNORE that and do not click any keys during this process because we do not to boot into the setup again.
 <br />
 <br />
 
 <p align="center">
-<img src="https://imgur.com/jevncQO.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/yeLKZ0u.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 With Server 2019 finally installed, you will be prompted to set an Adminstrative Password, for this password and every other password from this lab onward we will be using the same password "Password1" so we can remember it easily. Just never do that in a real world environment! ;)
 <br />
 <br />
 
 <p align="center">
-<img src="https://imgur.com/OchiQXu.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/6Fz5gSd.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 To login to the VM, you'll notice it will say to do the combined keystroke "Cntrl+Alt+Dlt" to login but when you try to do that it will not work. Depending whether you are using Mac or Windows you'll go to Input then Keyboard, then hit "Insert Cntrl+Alt+Dlt" it will then prompt you to enter our simple password from earlier. "Password1"
 <br />
 <br />
 
 <p align="center">
-<img src="https://imgur.com/hA3RtQP.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/zA9rmLS.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 Once you're logged into the VM you'll notice how the user experience around is very choppy, for example simply moving around your mouse or minimizing/maximizing the window size for the VM. To fix this click Devices at the top of the window then enable "Insert Guest Additions".
 <br />
 <br />
 
 <p align="center">
-<img src="https://imgur.com/3d70XxY.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/0mW4yD2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 To finilize guest additions, go to your file explorer app. You will now see a new Drive appear called "CD Drive (D:) VirtualBox Guest Additions", double click that then near the bottom of the listed contents inside double click the executable "VBoxWindowsAdditions-amd64". Agree to each of the prompts until it asks you to reboot now, click reboot later then "Finish". Now, shutdown the VM.
 <br />
