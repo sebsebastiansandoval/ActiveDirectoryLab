@@ -42,7 +42,7 @@ Download Windows 10 64-bit, save somewhere you will remember (e.g. save to Deskt
 <br />
 
 <p align="center">
-<img src="https://imgur.com/7Swfp63.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/5HC22RW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 Now to create our Virtual Machines, open Oracle Virtual Box and hit "New". We'll name this one DC (Domain Controller), and set to Windows Other (64-bit).
 <br />
