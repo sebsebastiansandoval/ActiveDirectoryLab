@@ -126,21 +126,21 @@ To finilize guest additions, go to your file explorer app. You will now see a ne
 <br />
  
 <p align="center">
-<img src="https://imgur.com/XGCgFPv.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/zPO31J7.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 Double click our VM to start it up again. Once open, login by clicking input at the top then "Insert Cntrl+Alt+Dlt". Now you notice how much smoother the overall user experience is. 
 <br />
 <br />
  
 <p align="center">
-<img src="https://imgur.com/zUAAwYx.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/MoQVPYG.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 Looking back at the diagram we have 2 NICs for our DC, our internet NIC does not require us to setup up an IP as it will use DHCP to get addressing from your home router. But for our Internal NIC, we must set it up manually.
 <br />
 <br />
  
 <p align="center">
-<img src="https://imgur.com/m3xQIRc.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/ir5GZsC.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 Open up "Control Panel" then go to "Network and Internet" then "Network Connections". We want to identify which NIC is our Internal versus our Internet NIC and rename them accordingly. 
 <br />
