@@ -22,7 +22,7 @@ In this tutorial we are going to learn the step-by-step process of creating an A
 
 <h2>Lab Diagram:</h2>
 <p align="center">
-<img src="https://imgur.com/dJkUTXJ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/qOkMowa.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 
 <h2>Program walk-through:</h2>
