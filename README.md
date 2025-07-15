@@ -245,7 +245,7 @@ With our newly created Admin account you'll see it's still a regular "User" acco
 <br />
  
 <p align="center">
-<img src="https://imgur.com/6kfYdkc.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/9ZKlJ2S.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 To now use this account, sign out of the VM then log back in clicking "Other User" at the bottom left. Enter the admin user we created earlier, for myself it would be "a-ssandoval" and our simple password "Password1". Allowing it to pull our name out from Active Directory.
 <br />
