@@ -147,7 +147,7 @@ Open up "Control Panel" then go to "Network and Internet" then "Network Connecti
 <br />
  
 <p align="center">
-<img src="https://imgur.com/0HstXYH.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/KMIr3Tj.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 Right click the left one the hit "Details". We'll see this contains a home-like IP "10.0.2.15" so we will rename this "_INTERNET_". You'll notice the other NIC contains the address 169.254.196.79, meaning at one point it tried utilizing DHCP to assign an address but was unable to so it assigned itself this specific IP. So if you see a NIC with this specifc address that's how you'll know it's our Internal one. Rename this one "X_Internal_X".
 <br />
