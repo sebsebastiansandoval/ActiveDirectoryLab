@@ -280,13 +280,40 @@ Once that is done installing, on Server Manager go to "Tools" on the top right. 
 <br />
  
 <p align="center">
-<img src="https://imgur.com/JCvLUJ0.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/Yl9aPkO.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
-Now we will setup a DHCP Server on our Domain Controller. Which will allow our users on the network to automatically obtain an IP address on their computers and browse the internet. 
+Now we will setup a DHCP Server on our Domain Controller. Which will allow our users on the network to automatically obtain an IP address on their computers and browse the internet. We want to go back to Server Manager and select "Add roles and features", once again select our server, check "DHCP", next then Install. Now with it installed we can setup our Scope.
 <br />
 <br />
-
-
+ 
+<p align="center">
+<img src="https://imgur.com/1CjpnCM.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+Go to Tools on the top right, then DHCP. Right click IPv4 then "New Scope.". We can simply name the Scope what the IP range is, in our case "172.16.0.100-200". Next. Under Lease Duration, meaning how long a user on that network can use a given IP (e.g. as the owner of a cafe we would want it to be only around 2 hours). Leave it as 8 days since this is in a home lab setting.
+<br />
+<br />
+ 
+<p align="center">
+<img src="https://imgur.com/V0kgxrD.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+Under Configure DHCP Options, configuring this we can tell each client which server to connect to for DNS or the Gateway and we do want to configure that so our clients can access the internet. Looking back at our diagram we can see we configured NAT on the DC so its job is to also forward traffic from the clients to the internet. Because of this we are going to use our Internal NIC as the router (default gateway) for DHCP. In our case "172.16.0.1". Then hit "Add".
+<br />
+<br />
+ 
+<p align="center">
+<img src="https://imgur.com/fc2sJEM.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+Now it asks what we wanna use for our DNS Server, but because it comes autmatically installed when installing Active Directory onto our DC, we will use our DC as the DNS Server. Then hit Next. Yes "Activate Scope' then Finish. To finalize our changes, on our DHCP window right click the DC, "Authorize", then hit "Refresh".
+<br />
+<br />
+ 
+<p align="center">
+<img src="https://imgur.com/fc2sJEM.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+Now we must create a configuration that allows us to browse the internet from the DC (NEVER DO IN A REAL LIFE WORK ENVIRONMENT THIS IS JUST FOR THE LAB). Go to Server Manager then "Configure this local server". 
+<br />
+<br />
+ 
 <!--
  ```diff
 - text in red
