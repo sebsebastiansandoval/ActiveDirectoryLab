@@ -261,10 +261,32 @@ Next we will install RAS/NAT (Remote Access Server/Network Address Translator). 
 <p align="center">
 <img src="https://imgur.com/csG8MLR.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
-Next we will install RAS/NAT (Remote Access Server/Network Address Translator). Which will allow our Windows 10 client to be on this private virtual network but still able to access the internet through this Domain Controller.
+Next we will install RAS/NAT (Remote Access Server/Network Address Translation). Which will allow our Windows 10 client to be on this private virtual network but still able to access the internet through the Domain Controller.
 <br />
 <br />
  
+<p align="center">
+<img src="https://imgur.com/GZSBOHk.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+To do so go to Server Manager and click "add roles and features", select the server we created and hit next. Under Server Roles, check "Remote Access". Under Roles Services install "routing" then install.
+<br />
+<br />
+ 
+<p align="center">
+<img src="https://imgur.com/JCvLUJ0.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+Once that is done installing, on Server Manager go to "Tools" on the top right. Click "Routing and Remote Access". Right click our DC then click "Configure and Enable Routing and Remote Access". Select NAT then next. When choosing which network out of the two NICs we created we will select our Internet NIC as our means of connecting. Finalize and then we have successfully installed and configured RAS / NAT.
+<br />
+<br />
+ 
+<p align="center">
+<img src="https://imgur.com/JCvLUJ0.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+Now we will setup a DHCP Server on our Domain Controller. Which will allow our users on the network to automatically obtain an IP address on their computers and browse the internet. 
+<br />
+<br />
+
+
 <!--
  ```diff
 - text in red
