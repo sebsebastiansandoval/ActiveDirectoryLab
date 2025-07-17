@@ -308,7 +308,7 @@ Now it asks what we wanna use for our DNS Server, but because it comes autmatica
 <br />
  
 <p align="center">
-<img src="https://imgur.com/fc2sJEM.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://raw.githubusercontent.com/sebsebastiansandoval/ActiveDirectoryLab/main/images/disablefeatureIE.png" width="80%" alt="Disk Sanitization Steps" />
 <br />
 Now we must create a configuration that allows us to browse the internet from the DC (NEVER DO IN A REAL LIFE WORK ENVIRONMENT THIS IS JUST FOR THE LAB). Go to Server Manager then "Configure this local server". 
 <br />
