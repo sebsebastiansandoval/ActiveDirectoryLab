@@ -310,7 +310,21 @@ Now it asks what we wanna use for our DNS Server, but because it comes autmatica
 <p align="center">
 <img src="https://raw.githubusercontent.com/sebsebastiansandoval/ActiveDirectoryLab/main/images/disablefeatureIE.png" width="80%" alt="Disk Sanitization Steps" />
 <br />
-Now we must create a configuration that allows us to browse the internet from the DC (NEVER DO IN A REAL LIFE WORK ENVIRONMENT THIS IS JUST FOR THE LAB). Go to Server Manager then "Configure this local server". 
+Now we must create a configuration that allows us to browse the internet from the DC (NEVER DO IN A REAL LIFE WORK ENVIRONMENT THIS IS JUST FOR THE LAB). Go to Server Manager then "Configure this local server". Here we want to diable this feature here "IE Enhanced Security Configuration", if left on before each page on the internet loads Internet Explorer will bug us asking "Are you sure you want to open this link?".
+<br />
+<br />
+ 
+<p align="center">
+<img src="https://raw.githubusercontent.com/sebsebastiansandoval/ActiveDirectoryLab/main/images/pastescriptlink.png" width="80%" alt="Disk Sanitization Steps" />
+<br />
+We will now use our Powershell script to automate the creation of each and every mock user on our private network, similar to a actual work setting. This link here, , is it the source code to the powershell script to create all the users. All credits to Tech Influencer and IT Professional, Josh Madakor, for creating the source code and providing it to the public for anyone to use! :) First go to your DC and open Internet Explorer and paste that link there. Download and save the file onto your Desktop. Then extract it there.
+<br />
+<br />
+ 
+<p align="center">
+<img src="https://raw.githubusercontent.com/sebsebastiansandoval/ActiveDirectoryLab/main/images/pastescriptlink.png" width="80%" alt="Disk Sanitization Steps" />
+<br />
+But before we dive into anything a short explanation on how this script works.
 <br />
 <br />
  
