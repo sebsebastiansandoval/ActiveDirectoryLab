@@ -322,9 +322,37 @@ We will now use our Powershell script to automate the creation of each and every
 <br />
  
 <p align="center">
-<img src="https://raw.githubusercontent.com/sebsebastiansandoval/ActiveDirectoryLab/main/images/pastescriptlink.png" width="80%" alt="Disk Sanitization Steps" />
+<img src="https://raw.githubusercontent.com/sebsebastiansandoval/ActiveDirectoryLab/main/images/scriptnames.png" width="80%" alt="Disk Sanitization Steps" />
 <br />
-But before we dive into anything a short explanation on how this script works.
+But before we dive into anything a short explanation on how this script works. After extracting onto the desktop we want to open that file, and open this plain text files "names". You'll see here each randomly generated name, each to act as individual mock users. And create one for yourself at the top of the list with your first and last name. Save your changes then close this window.
+<br />
+<br />
+ 
+<p align="center">
+<img src="https://raw.githubusercontent.com/sebsebastiansandoval/ActiveDirectoryLab/main/images/openpowershellISE.png" width="80%" alt="Disk Sanitization Steps" />
+<br />
+Click the windows start icon at the bottom left, look for Powershell ISE and right click to open as administrator. Click the Open Script icon at the top left then select our downloadaed script. As a security feature first we must enable the use of all scripts, as you'll notice how when we try to execute as is you will receive an error message.  
+<br />
+<br />
+ 
+<p align="center">
+<img src="https://raw.githubusercontent.com/sebsebastiansandoval/ActiveDirectoryLab/main/images/enablescripts.png" width="80%" alt="Disk Sanitization Steps" />
+<br />
+Type into Powershell "Set-ExecutionPolicy Unrestricted" then enter. Then "Yes to all".
+<br />
+<br />
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/sebsebastiansandoval/ActiveDirectoryLab/main/images/enablescripts.png" width="80%" alt="Disk Sanitization Steps" />
+<br />
+Now that we can officially run our script to create our mock users, we first have to make sure we're in the correct directory for it to properly pull out the content from our "names.txt" file. In the GUI, type "cd c:\users\a-*enter your username*\desktop\AD-PS-master" then enter. Then if we type "ls" into the GUI we'll see the "names.txt" present.
+<br />
+<br />
+ 
+<p align="center">
+<img src="https://raw.githubusercontent.com/sebsebastiansandoval/ActiveDirectoryLab/main/images/enablescripts.png" width="80%" alt="Disk Sanitization Steps" />
+<br />
+Type into Powershell "Set-ExecutionPolicy Unrestricted" then enter. Then "Yes to all".
 <br />
 <br />
  
