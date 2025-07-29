@@ -362,9 +362,30 @@ Once the script has finish running, looking back at our diagram we essentially h
 <br />
  
 <p align="center">
-<img src="https://raw.githubusercontent.com/sebsebastiansandoval/ActiveDirectoryLab/main/images/diagramagain.png" width="80%" alt="Disk Sanitization Steps" />
+<img src="https://raw.githubusercontent.com/sebsebastiansandoval/ActiveDirectoryLab/main/images/createnewwindowsvm.png" width="80%" alt="Disk Sanitization Steps" />
 <br />
-Go back to Virtual Box, 
+Go back to Virtual Box, then create a new Virtual Machine and name it "CLIENT1". Set the windows version to "Windows 10 (64-bit). If you know how much RAM your system contain you may allocate more than just 2 gigabytes to speed things up, but if not, no worries simply leave as is at 2. Then finalize and hit create.
+<br />
+<br />
+ 
+<p align="center">
+<img src="https://raw.githubusercontent.com/sebsebastiansandoval/ActiveDirectoryLab/main/images/windowsclientbi.png" width="80%" alt="Disk Sanitization Steps" />
+<br />
+Before we turn on our Windows Client VM, right click the VM and go to settings -> then "Advanced". And change both Shared Clipboard and Drag'n'drop to "Bidirectional", if we ever need to copy and paste anything onto the VM client.
+<br />
+<br />
+ 
+<p align="center">
+<img src="https://raw.githubusercontent.com/sebsebastiansandoval/ActiveDirectoryLab/main/images/allocatemorecores.png" width="80%" alt="Disk Sanitization Steps" />
+<br />
+Then, go to the System tab and allocate more cores to further speed up the processing of things (ONLY IF YOU KNOW HOW MANY CORES YOUR SYSTEM HAS, IF NOT LEAVE AS IS).
+<br />
+<br />
+ 
+<p align="center">
+<img src="https://raw.githubusercontent.com/sebsebastiansandoval/ActiveDirectoryLab/main/images/changetointernal.png" width="80%" alt="Disk Sanitization Steps" />
+<br />
+Go to the Network tab and change it to "Internal Network" for it to connect to our Internal NIC. Since we connected it to our Internal NIC it allows our DHCP server to allocate an IP address and also to emulate an actual work-like environment. Finalize those changes and now we can double-click our VM to officially get it running.
 <br />
 <br />
  
