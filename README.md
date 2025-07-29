@@ -329,30 +329,42 @@ But before we dive into anything a short explanation on how this script works. A
 <br />
  
 <p align="center">
-<img src="https://raw.githubusercontent.com/sebsebastiansandoval/ActiveDirectoryLab/main/images/openpowershellISE.png" width="80%" alt="Disk Sanitization Steps" />
+<img src="https://raw.githubusercontent.com/sebsebastiansandoval/ActiveDirectoryLab/main/images/enablescripts.png" width="80%" alt="Disk Sanitization Steps" />
 <br />
 Click the windows start icon at the bottom left, look for Powershell ISE and right click to open as administrator. Click the Open Script icon at the top left then select our downloadaed script. As a security feature first we must enable the use of all scripts, as you'll notice how when we try to execute as is you will receive an error message.  
 <br />
 <br />
  
-<p align="center">
-<img src="https://raw.githubusercontent.com/sebsebastiansandoval/ActiveDirectoryLab/main/images/enablescripts.png" width="80%" alt="Disk Sanitization Steps" />
 <br />
 Type into Powershell "Set-ExecutionPolicy Unrestricted" then enter. Then "Yes to all".
 <br />
 <br />
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/sebsebastiansandoval/ActiveDirectoryLab/main/images/enablescripts.png" width="80%" alt="Disk Sanitization Steps" />
+<img src="https://raw.githubusercontent.com/sebsebastiansandoval/ActiveDirectoryLab/main/images/entercorrectdirectory.png" width="80%" alt="Disk Sanitization Steps" />
 <br />
 Now that we can officially run our script to create our mock users, we first have to make sure we're in the correct directory for it to properly pull out the content from our "names.txt" file. In the GUI, type "cd c:\users\a-*enter your username*\desktop\AD-PS-master" then enter. Then if we type "ls" into the GUI we'll see the "names.txt" present.
 <br />
 <br />
  
 <p align="center">
-<img src="https://raw.githubusercontent.com/sebsebastiansandoval/ActiveDirectoryLab/main/images/enablescripts.png" width="80%" alt="Disk Sanitization Steps" />
+<img src="https://raw.githubusercontent.com/sebsebastiansandoval/ActiveDirectoryLab/main/images/playscript.png" width="80%" alt="Disk Sanitization Steps" />
 <br />
-Type into Powershell "Set-ExecutionPolicy Unrestricted" then enter. Then "Yes to all".
+Click the green arrow icon at the top to play the script. As you will see it will then automatically create the new "_USERS" folder in AD, and automate the creation of our mock users :) P.S. Here and there as the users are being created you will notice some errors but that is simply due to there being some duplicate names from the list of users. The script will still run seemlessly.
+<br />
+<br />
+ 
+<p align="center">
+<img src="https://raw.githubusercontent.com/sebsebastiansandoval/ActiveDirectoryLab/main/images/diagramagain.png" width="80%" alt="Disk Sanitization Steps" />
+<br />
+Once the script has finish running, looking back at our diagram we essentially have everything setup at this point. Our internet is connected, our NICs are setup, we have the domain setup with our mock users, RAS/NAT is setup, we have DHCP setup for IP addressing, and we are connected to our VMWare Private Network as well. Lastly we just need to create our interal Windows VM client here. Which uses our Internal NIC we created earlier.
+<br />
+<br />
+ 
+<p align="center">
+<img src="https://raw.githubusercontent.com/sebsebastiansandoval/ActiveDirectoryLab/main/images/diagramagain.png" width="80%" alt="Disk Sanitization Steps" />
+<br />
+Go back to Virtual Box, 
 <br />
 <br />
  
