@@ -389,6 +389,48 @@ Go to the Network tab and change it to "Internal Network" for it to connect to o
 <br />
 <br />
  
+<p align="center">
+<img src="https://raw.githubusercontent.com/sebsebastiansandoval/ActiveDirectoryLab/main/images/installwindows10iso.png" width="80%" alt="Disk Sanitization Steps" />
+<br />
+Once the window pops up, click "Add" then search for your Windows 10 ISO file which we saved onto the desktop from the beginning of this tutorial. Then hit "Start". This process does take a minute to fully install.
+<br />
+<br />
+ 
+<p align="center">
+<img src="https://raw.githubusercontent.com/sebsebastiansandoval/ActiveDirectoryLab/main/images/windows10isosetup.png" width="80%" alt="Disk Sanitization Steps" />
+<br />
+Once complete, click "I don't have a product key". IMPORTANT: Select Windows 10 Pro NOT HOME as it is not compatible with Windows 10 Home.
+<br />
+<br />
+ 
+<p align="center">
+<img src="https://raw.githubusercontent.com/sebsebastiansandoval/ActiveDirectoryLab/main/images/windows10customdisk.png" width="80%" alt="Disk Sanitization Steps" />
+<br />
+Accept the terms, then click "Custom Install" because our hard-drive is empty. Then "Next" and "Install". This part also takes awhile to complete. IMPORTANT: Do not "Click any key to start" as it will restart the setup.
+<br />
+<br />
+ 
+<p align="center">
+<img src="https://raw.githubusercontent.com/sebsebastiansandoval/ActiveDirectoryLab/main/images/idonthaveinternet.png" width="80%" alt="Disk Sanitization Steps" />
+<br />
+Once complete, select your personal region and keyboard layout. If it asks you to connect to internet simply click "I don't have internet" then continue. If it also asks click you are using it for home as well.
+<br />
+<br />
+ 
+<p align="center">
+<img src="https://raw.githubusercontent.com/sebsebastiansandoval/ActiveDirectoryLab/main/images/continuewithlimitedsetup.png" width="80%" alt="Disk Sanitization Steps" />
+<br />
+Our goal in this part of the process is to NOT create a Microsoft account so if it asks you to, try to login as a local user instead.
+<br />
+<br />
+ 
+<p align="center">
+<img src="https://raw.githubusercontent.com/sebsebastiansandoval/ActiveDirectoryLab/main/images/enteruserasuser.png" width="80%" alt="Disk Sanitization Steps" />
+<br />
+For your username, enter it as just as "user" for this lab. For password we won't be needing one for this lab so just click "Next" to skip. For the Privacy Settings portion of this turn each and every feature off. Then click "Accept" and finalize.
+<br />
+<br />
+ 
 <!--
  ```diff
 - text in red
