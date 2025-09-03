@@ -427,10 +427,16 @@ Our goal in this part of the process is to NOT create a Microsoft account so if 
 <p align="center">
 <img src="https://raw.githubusercontent.com/sebsebastiansandoval/ActiveDirectoryLab/main/images/enteruserasuser.png" width="80%" alt="Disk Sanitization Steps" />
 <br />
-For your username, enter it as just as "user" for this lab. For password we won't be needing one for this lab so just click "Next" to skip. For the Privacy Settings portion of this turn each and every feature off. Then click "Accept" and finalize.
+For your username, enter it as just as "user" for this lab. For password we won't be needing one for this lab so just click "Next" to skip. For the Privacy Settings portion of this turn each and every feature off. Then click "Accept" and finalize. At this point, we'll let Windows finalize and finish setting up. 
 <br />
 <br />
  
+<p align="center">
+<img src="https://raw.githubusercontent.com/sebsebastiansandoval/ActiveDirectoryLab/main/images/completediagram.png" width="80%" alt="Disk Sanitization Steps" />
+<br />
+Looking back at our diagram,
+<br />
+<br />
 <!--
  ```diff
 - text in red
