@@ -437,6 +437,28 @@ For your username, enter it as just as "user" for this lab. For password we won'
 Looking back at our diagram, we now have our full infrastructure working. We have full connectivity to the default gateway (Domain Controller), then our DC is properly forwarding that traffic (RAS / NAT) to the internet and now can ping back to us as an echo reply.
 <br />
 <br />
+ 
+<p align="center">
+<img src="https://raw.githubusercontent.com/sebsebastiansandoval/ActiveDirectoryLab/main/images/renametoclient1.png" width="80%" alt="Disk Sanitization Steps" />
+<br />
+Now to change the name of our client desktop. Right click the start menu and hit "Settings". Scroll down and click "Rename this PC (advanced)" and we can join the domain at the same time. Hit the "Change" button then rename to "CLIENT1" as per our diagram. Now under "Member of:" enter our domain "mydomain.com" then hit OK.
+<br />
+<br />
+ 
+<p align="center">
+<img src="https://raw.githubusercontent.com/sebsebastiansandoval/ActiveDirectoryLab/main/images/clientscope.png" width="80%" alt="Disk Sanitization Steps" />
+<br />
+Go back to our DC, then to the DHCP settings in Server Manager. On the left let's expand the Scope folder, then click Address Leases. We'll see here we have 1 address lease. When we created our client computer and connected it to the donain, it reached out to the DHCP server for an IP address and gave it one. 
+<br />
+<br />
+ 
+<p align="center">
+<img src="https://raw.githubusercontent.com/sebsebastiansandoval/ActiveDirectoryLab/main/images/usersandcomputers.png" width="80%" alt="Disk Sanitization Steps" />
+<br />
+Staying on our DC Virtual Machine, click the start menu and under Windows Administrative Tools, hit Active Directory Users and Computers. Click the "Computers" container on the left. We'll see here our Client 1 computer pop up. And with that being said we can now use any of the mock user accounts to login to that client VM. 
+<br />
+<br />
+ 
 <!--
  ```diff
 - text in red
