@@ -434,7 +434,7 @@ For your username, enter it as just as "user" for this lab. For password we won'
 <p align="center">
 <img src="https://raw.githubusercontent.com/sebsebastiansandoval/ActiveDirectoryLab/main/images/completediagram.png" width="80%" alt="Disk Sanitization Steps" />
 <br />
-Looking back at our diagram,
+Looking back at our diagram, we now have our full infrastructure working. We have full connectivity to the default gateway (Domain Controller), then our DC is properly forwarding that traffic (RAS / NAT) to the internet and now can ping back to us as an echo reply.
 <br />
 <br />
 <!--
