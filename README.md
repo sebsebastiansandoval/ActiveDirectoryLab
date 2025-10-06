@@ -455,7 +455,7 @@ Go back to our DC, then to the DHCP settings in Server Manager. On the left let'
 <p align="center">
 <img src="https://raw.githubusercontent.com/sebsebastiansandoval/ActiveDirectoryLab/main/images/usersandcomputers.png" width="80%" alt="Disk Sanitization Steps" />
 <br />
-Staying on our DC Virtual Machine, click the start menu and under Windows Administrative Tools, hit Active Directory Users and Computers. Click the "Computers" container on the left. We'll see here our Client 1 computer pop up. And with that being said we can now use any of the mock user accounts to login to that client VM. 
+Staying on our DC Virtual Machine, click the start menu and under Windows Administrative Tools, hit Active Directory Users and Computers. Click the "Computers" container on the left. We'll see here our Client 1 computer pop up. And with that being said we can now use any of the mock user accounts to login to that client VM which is the next step.
 <br />
 <br />
  
