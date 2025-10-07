@@ -459,6 +459,20 @@ Staying on our DC Virtual Machine, click the start menu and under Windows Admini
 <br />
 <br />
  
+<p align="center">
+<img src="https://raw.githubusercontent.com/sebsebastiansandoval/ActiveDirectoryLab/main/images/logintowindowsvm.png" width="80%" alt="Disk Sanitization Steps" />
+<br />
+Go back to Windows 10 Virtual Machine, click Other User and here you'll notice "Sign into: MYDOMAIN". Remember our usernames are just first initial, lastname. Passwords are just "Password1". Then login. Here it will be creating our user profile since it is our time logging into this machine. This may take awhile. 
+<br />
+<br />
+ 
+<p align="center">
+<img src="https://raw.githubusercontent.com/sebsebastiansandoval/ActiveDirectoryLab/main/images/logintowindowsvm.png" width="80%" alt="Disk Sanitization Steps" />
+<br />
+Looking back at our network diagram, essentially we've created a mini corporate network. And the  
+<br />
+<br />
+ 
 <!--
  ```diff
 - text in red
